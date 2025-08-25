@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const footer = document.createElement("footer");
-        footer.textContent = "Ve zdrojích se najde kód";
+        footer.textContent = "Ve zdrojích se najde kód, ignoruj hlad.";
         footer.style.display = "none"; // Skryjeme řádek při přidání
 
         document.body.appendChild(footer);
