@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Šifra</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #0b0b0b;
+            --muted: rgba(11, 11, 11, 0.6);
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 6vh auto;
+            padding: 3rem;
+            line-height: 1.6
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 1rem;
+            color: var(--muted);
+            letter-spacing: 0.08em
+        }
+
+        p {
+            margin: 0 0 1rem;
+            font-size: 1.125rem
+        }
+
+        .odd {
+            transform: skewX(-4deg);
+            letter-spacing: 0.06em
+        }
+
+        .faint {
+            color: var(--muted);
+            font-style: italic
+        }
+
+        .small {
+            font-size: .95rem;
+            opacity: .9
+        }
+
+        .big {
+            font-size: 1.4rem;
+            font-weight: 600
+        }
+
+        .rotate {
+            display: inline-block;
+            transform: rotate(-2deg)
+        }
+
+        .reverse {
+            unicode-bidi: bidi-override;
+            direction: rtl
+        }
+
+        .hidden {
+            color: #fff !important;
+            user-select: text
+        }
+
+        footer {
+            margin-top: 2rem;
+            color: var(--muted);
+            font-size: .9rem
+        }
+
+        /* dekorace */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem
+        }
+
+        @media (max-width:640px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>Šifra bez klíče</h1>
+
+        <div class="grid">
+            <div>
+                <p class="odd">Ticho mluví v zrcadlech, kde se slova bojí odlesků.</p>
+                <p class="faint">Měsíční hodiny tikají pozpátku a šepot počítá sekundy.</p>
+                <p class="rotate small">Papírové kroky vedou po mapě, která není nikde zakreslena.</p>
+                <p class="big">Stín si pamatuje jména, která se lidem vytrácí.</p>
+                <p class="reverse">.senořap yb ověď otam špátě</p>
+            </div>
+
+            <div>
+                <p class="odd">Klíče, které nikdo nepoužívá, stále otvírají prázdné dveře.</p>
+                <p class="faint">Hvězdy zapisují listy, které vítr nikdy nevrátí.</p>
+                <p class="small">Kdo zasadil ticho, sklízí ozvěny, které nikdo neslyšel.</p>
+                <p class="rotate">Ztracené fráze se schovávají ve stínech písmen.</p>
+                <p class="big">Noc má své vlastní abecedy — čte se pozorně, kdo neusne.</p>
+            </div>
+
+            <!-- Nové oddíly -->
+            <div>
+                <p class="odd">Větry šeptají příběhy, které nikdo nikdy nevyprávěl.</p>
+                <p class="faint">Stíny tančí na zdech, kde světlo nikdy nesvítí.</p>
+                <p class="rotate small">Každý krok je ozvěnou, která se ztrácí v čase.</p>
+                <p class="big">Ticho má svůj vlastní hlas, který slyší jen ti, kdo naslouchají.</p>
+                <p class="reverse">.ěnčiv otam yb ykšiv</p>
+            </div>
+
+            <div>
+                <p class="odd">Slova, která se nikdy neřekla, stále visí ve vzduchu.</p>
+                <p class="faint">Hodiny bez ručiček stále měří čas.</p>
+                <p class="small">Každý stín má svůj příběh, který nikdo nezná.</p>
+                <p class="rotate">Ztracené myšlenky se schovávají v prázdných řádcích.</p>
+                <p class="big">Noc je knihou, kterou čtou jen ti, kdo sní.</p>
+            </div>
+        </div>
+
+        <!-- Schovaný odkaz -->
+        <p class="hidden" data-hidden="https://shorturl.at/svTv6"></p>
+    </main>
+</body>
+
+</html>
